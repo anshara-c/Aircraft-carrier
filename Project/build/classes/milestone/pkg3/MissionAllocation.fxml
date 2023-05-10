@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="319.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="milestone.pkg3.MissionAllocationController">
+   <children>
+      <Button fx:id="displaypilotbutton" layoutX="50.0" layoutY="35.0" mnemonicParsing="false" onAction="#displayPilotButtonClicked" prefHeight="25.0" prefWidth="200.0" text="Show list of Pilots" />
+      <TableView fx:id="assignTable" layoutX="312.0" layoutY="35.0" prefHeight="121.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="pname" prefWidth="75.0" text="Pilot name" />
+          <TableColumn fx:id="mIndex" prefWidth="90.0" text="Mission Index" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="pilotViewArea" layoutX="50.0" layoutY="74.0" prefHeight="164.0" prefWidth="200.0" />
+      <Button fx:id="addPI" layoutX="310.0" layoutY="202.0" mnemonicParsing="false" onAction="#addPIOnButtonClicked" text="Show name in table" />
+      <TextField fx:id="pilotIndex" layoutX="312.0" layoutY="169.0" prefHeight="25.0" prefWidth="91.0" promptText="First name" />
+      <TextField fx:id="missionIndex" layoutX="412.0" layoutY="169.0" prefHeight="25.0" prefWidth="91.0" promptText="Mission Index" />
+      <Button fx:id="saveAllocation" layoutX="310.0" layoutY="276.0" mnemonicParsing="false" onAction="#saveAllocationButtonOnClick" prefHeight="25.0" prefWidth="186.0" text="Save allocation in file" />
+      <Button fx:id="saveaList" layoutX="310.0" layoutY="238.0" mnemonicParsing="false" onAction="#saveAListOnButtonClicked" text="Add new allocation to file" />
+      <Button layoutX="50.0" layoutY="263.0" mnemonicParsing="false" onAction="#GotoDashBoard" text="Go to Dashboard" />
+   </children>
+</AnchorPane>

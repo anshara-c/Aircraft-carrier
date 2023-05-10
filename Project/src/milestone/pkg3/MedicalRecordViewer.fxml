@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="milestone.pkg3.MedicalRecordViewerController">
+   <children>
+      <Button layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#showMedicaRecodOnButtonClick" prefHeight="25.0" prefWidth="221.0" text="Show medical file" />
+      <TextArea fx:id="medrecTxtArea" layoutX="12.0" layoutY="14.0" prefHeight="232.0" prefWidth="246.0" />
+      <Label layoutX="317.0" layoutY="23.0" text="MEDICINE LIST" textFill="#74855a">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="303.0" layoutY="91.0" text="If patient has:" />
+      <Label layoutX="303.0" layoutY="113.0" text="Sleep paralysis = Rivotril" />
+      <Label layoutX="303.0" layoutY="137.0" text="Frequent Cough = Adovas" />
+      <Label layoutX="303.0" layoutY="161.0" text="Constipation = Homeopathy" />
+      <Label layoutX="303.0" layoutY="183.0" text="Blood Pressure = lucatrol" />
+      <Label layoutX="303.0" layoutY="207.0" text="Gastric = Seclo" />
+      <Label layoutX="303.0" layoutY="229.0" text="SeaSickness = Emotil" />
+      <TextField fx:id="flname" layoutX="369.0" layoutY="256.0" promptText="eg: F.Chhowdhury" />
+      <TextField fx:id="medTxt" layoutX="369.0" layoutY="291.0" />
+      <Text layoutX="279.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="first.LastName" />
+      <Text layoutX="292.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine" />
+      <Button layoutX="414.0" layoutY="325.0" mnemonicParsing="false" onAction="#addMedOnButtonclick" text="Add prescription" />
+      <Button layoutX="561.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveOnButtonClick" prefHeight="25.0" prefWidth="92.0" text="Save to file" />
+      <Button layoutX="25.0" layoutY="338.0" mnemonicParsing="false" onAction="#GTD" text="Go to dashboard" />
+   </children>
+</AnchorPane>

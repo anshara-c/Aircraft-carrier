@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="milestone.pkg3.CreateRecipeController">
+   <children>
+      <Button layoutX="81.0" layoutY="168.0" mnemonicParsing="false" onAction="#CreateOnButtonClicked" prefHeight="115.0" prefWidth="172.0" text="Generate a PDF" />
+      <TextField fx:id="ChefNameTxt" layoutX="123.0" layoutY="59.0" />
+      <Label layoutX="52.0" layoutY="63.0" text="Chef Name:" />
+      <Button layoutX="26.0" layoutY="343.0" mnemonicParsing="false" onAction="#gotodashboard" text="go to dashboard" />
+   </children>
+</AnchorPane>

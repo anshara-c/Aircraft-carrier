@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="milestone.pkg3.DashboardforEngineerController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="114.0" style="-fx-background-color: PINK;">
+         <children>
+            <Label text="ENGINEER">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="D">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="R">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="45.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Button layoutX="266.0" layoutY="72.0" mnemonicParsing="false" onAction="#Vehiclescene" text="Vehicle check scene" />
+      <Button layoutX="261.0" layoutY="116.0" mnemonicParsing="false" onAction="#weatherscene" text="Weather report scene" />
+      <Button layoutX="253.0" layoutY="156.0" mnemonicParsing="false" onAction="#consumptionscene" text="Fuel consumption report" />
+      <Button layoutX="283.0" layoutY="194.0" mnemonicParsing="false" onAction="#repairscene" text="Repair report" />
+      <Button layoutX="300.0" layoutY="231.0" mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>

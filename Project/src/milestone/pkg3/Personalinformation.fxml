@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="499.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="milestone.pkg3.PersonalinformationController">
+   <children>
+      <Label layoutX="50.0" layoutY="290.0" text="HEIGHT:" />
+      <Label layoutX="38.0" layoutY="129.0" text="LAST NAME:" />
+      <Label layoutX="45.0" layoutY="247.0" text="ADDRESS:" />
+      <Label layoutX="311.0" layoutY="256.0" text="If yes. choose below:" />
+      <Label layoutX="38.0" layoutY="169.0" text="BLOOD GROUP" />
+      <Label layoutX="311.0" layoutY="235.0" text="Any health conditions?" />
+      <Label layoutX="48.0" layoutY="208.0" text="PHONE: " />
+      <Label layoutX="48.0" layoutY="324.0" text="WEIGHT:" />
+      <Label layoutX="37.0" layoutY="86.0" text="FIRST NAME:" />
+      <Label layoutX="311.0" layoutY="86.0" text="Any food Allergy?" />
+      <Label layoutX="311.0" layoutY="115.0" text="If yes, choose below:" />
+      <Label layoutX="42.0" layoutY="28.0" text="PERSONAL INFORMATION" textFill="#e40d0d">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ufnameTxt" layoutX="130.0" layoutY="82.0" />
+      <TextField fx:id="ulnameTxt" layoutX="130.0" layoutY="123.0" />
+      <TextField fx:id="bgTxt" layoutX="130.0" layoutY="165.0" />
+      <TextField fx:id="uphnTxt" layoutX="130.0" layoutY="204.0" />
+      <TextField fx:id="uaddTxt" layoutX="131.0" layoutY="243.0" />
+      <TextField fx:id="uHeightTxt" layoutX="130.0" layoutY="286.0" />
+      <TextField fx:id="uWeighTxt" layoutX="130.0" layoutY="320.0" />
+      <RadioButton fx:id="yesRadioButton1" layoutX="417.0" layoutY="86.0" mnemonicParsing="false" onAction="#allergyOnButtonClick1" text="Yes" />
+      <RadioButton fx:id="noRadioButton1" layoutX="463.0" layoutY="86.0" mnemonicParsing="false" onAction="#allergyOnButtonClick1" text="No" />
+      <CheckBox fx:id="dairyCheckBox" layoutX="311.0" layoutY="138.0" mnemonicParsing="false" text="Dairy" />
+      <CheckBox fx:id="beefCheckBox" layoutX="311.0" layoutY="161.0" mnemonicParsing="false" text="Beef" />
+      <CheckBox fx:id="nutsCheckBox" layoutX="311.0" layoutY="182.0" mnemonicParsing="false" text="Nuts" />
+      <CheckBox fx:id="shrimpCheckBox" layoutX="311.0" layoutY="208.0" mnemonicParsing="false" text="Shrimp" />
+      <RadioButton fx:id="yesRadioButton" layoutX="439.0" layoutY="235.0" mnemonicParsing="false" onAction="#illnessOnButtonClick" text="Yes" />
+      <RadioButton fx:id="noRadioButton" layoutX="482.0" layoutY="235.0" mnemonicParsing="false" onAction="#illnessOnButtonClick" text="No" />
+      <CheckBox fx:id="GastricCheckBox" layoutX="311.0" layoutY="278.0" mnemonicParsing="false" text="Gastric" />
+      <CheckBox fx:id="SeaSicknessCheckBox" layoutX="311.0" layoutY="299.0" mnemonicParsing="false" text="Seasickness" />
+      <CheckBox fx:id="BloodPressurecheckbox" layoutX="311.0" layoutY="324.0" mnemonicParsing="false" text="Blood pressure" />
+      <CheckBox fx:id="ConstipationCheckBox" layoutX="431.0" layoutY="278.0" mnemonicParsing="false" text="Constipation" />
+      <CheckBox fx:id="FrequentCoughCheckBox" layoutX="430.0" layoutY="299.0" mnemonicParsing="false" text="Frequent cough" />
+      <CheckBox fx:id="SleepParalysisCheckBox" layoutX="431.0" layoutY="324.0" mnemonicParsing="false" text="Sleep paralysis" />
+      <Button fx:id="saveinfobutton" layoutX="491.0" layoutY="460.0" mnemonicParsing="false" onAction="#saveinfobuttonOnButtonClick" prefHeight="25.0" prefWidth="95.0" text="Save to file" />
+      <TextArea fx:id="allergyTxtArea" layoutX="434.0" layoutY="123.0" prefHeight="109.0" prefWidth="134.0" />
+      <TextArea fx:id="illnessTxtArea" layoutX="314.0" layoutY="348.0" prefHeight="85.0" prefWidth="216.0" />
+      <Button fx:id="saveinfobutton1" layoutX="316.0" layoutY="441.0" mnemonicParsing="false" onAction="#add2ArraybuttonOnButtonClick" prefHeight="25.0" prefWidth="115.0" text="Add to Array" />
+      <Button layoutX="27.0" layoutY="448.0" mnemonicParsing="false" onAction="#gotodashboard" text="Go to dashboard" />
+   </children>
+</AnchorPane>
